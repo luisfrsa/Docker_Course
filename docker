@@ -1,0 +1,18 @@
+docker pull [image-name]
+
+docker run [image-name] //cria um container
+docker run -it [image-name] /bin/bash //cria um container e entra no terminal
+docker run --name [image-name] //cria um container com alias
+docker run -p 8080:80 ubuntu || nginx || name //mapea porta
+docker run --rm //containers que auto destroem apos sair da sessao
+docker run -d //cria container em backgroundm utiliza stop/start
+
+
+docker ps //lista containers ativos
+docker ps -a //lista todos os containers
+
+docker rm id_ou_alias //remove container
+
+docker inspect id_ou_alias //mostra info do container
+
+docker commit ID/apelido nome_da_nova_imagem //comita alteracoes de um container em uma imagem

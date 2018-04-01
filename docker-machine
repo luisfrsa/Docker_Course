@@ -1,0 +1,10 @@
+docker-machine ls
+docker-machine create [machine-name] 
+docker-machine start [machine-name]
+docker-machine stop [machine-name]
+docker-machine env [machine-name]
+docker-machine ip [machine-name]
+docker-machine rm [machine-name]
+
+
+eval $(docker-machine env [machine-name]) //switch active
